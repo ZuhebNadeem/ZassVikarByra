@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="424fa08d-fc84-467a-9d76-597ba79d11e3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="notepadfx" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Tabell</find>
+      <find>TabellLedige</find>
+      <find>soktsokere</find>
+      <find>valgForArbeidsgiver</find>
+      <find>Jobbsoker</find>
+      <find>Jobbsooker</find>
+      <find>nyStillingFil</find>
+      <find>jobbsøkerFil</find>
+      <find>extension</find>
+      <find>arbeidsgiverArrayLis</find>
+      <find>ledige</find>
+      <find>Arbei</find>
+      <find>Ledige</find>
+      <find>listeallearbeidsgivere</find>
+      <find>alleStillinger</find>
+      <find>TabellLedigestillinger</find>
+      <find>arbeidsgivere</find>
+      <find>arbeidsgivere</find>
+      <find>Combo</find>
+      <find>//</find>
+      <find>arbeidsgiverArrayList</find>
+      <find>TabellArbeidsforhold</find>
+      <find>komplettkontrakt</find>
+      <find>allearbeidsgivere</find>
+      <find>arbedsgiverFil</find>
+      <find>nyStilling ny</find>
+      <find>lesFraFil</find>
+      <find>manPower</find>
+      <find>test</find>
+      <find>testmetod</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YdTtnQijq152xqfkaDVB41H8pF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554812048556" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zuheb\IdeaProjects\Vikarbyraaa\Programeeering\prog\NotepadFX\src\main\java\org\groupId\models\Klasser" />
+      <recent name="C:\Users\Zuheb\IdeaProjects\Vikarbyraaa\Programeeering\prog\NotepadFX\src\main\java\org\groupId\models\Filer" />
+      <recent name="C:\Users\Zuheb\IdeaProjects\Vikarbyraaa\Programeeering\prog\NotepadFX\src\main\java\org\groupId\models" />
+      <recent name="C:\Users\Zuheb\IdeaProjects\prog\NotepadFX\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.notepadfx [compile,exec:java]">
+    <configuration name="Startside" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.groupId.Startside" />
+      <module name="notepadfx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.groupId.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="notepadfx [compile,exec:java]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+                <option value="exec:java" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Startside" />
+      <item itemvalue="Maven.notepadfx [compile,exec:java]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Startside" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="424fa08d-fc84-467a-9d76-597ba79d11e3" name="Default Changelist" comment="" />
+      <created>1554747794706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554747794706</updated>
+      <workItem from="1554747795927" duration="4185000" />
+      <workItem from="1554818864309" duration="7131000" />
+      <workItem from="1555322549512" duration="14429000" />
+      <workItem from="1555358477163" duration="2475000" />
+      <workItem from="1555407337653" duration="20660000" />
+      <workItem from="1555497360895" duration="2514000" />
+      <workItem from="1555500114372" duration="15215000" />
+      <workItem from="1555531745265" duration="10000" />
+      <workItem from="1555592432672" duration="12304000" />
+      <workItem from="1555670173245" duration="23388000" />
+      <workItem from="1555842709916" duration="18443000" />
+      <workItem from="1555943880274" duration="3626000" />
+      <workItem from="1555947705876" duration="33000" />
+      <workItem from="1555947757429" duration="8166000" />
+      <workItem from="1556011839618" duration="6552000" />
+      <workItem from="1556018627601" duration="10888000" />
+      <workItem from="1556112430713" duration="1383000" />
+      <workItem from="1556123629722" duration="8054000" />
+      <workItem from="1556185743284" duration="9536000" />
+      <workItem from="1556200075846" duration="6080000" />
+      <workItem from="1556275707109" duration="14699000" />
+      <workItem from="1556380666893" duration="781000" />
+      <workItem from="1556454882948" duration="27501000" />
+      <workItem from="1556532523969" duration="10652000" />
+      <workItem from="1556619289592" duration="31907000" />
+      <workItem from="1556716528600" duration="24456000" />
+      <workItem from="1556798810683" duration="66775000" />
+      <workItem from="1583271690224" duration="373000" />
+      <workItem from="1583272195477" duration="62000" />
+      <workItem from="1583357615447" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1237" height="271" key="GridCell.Tab.0.bottom" timestamp="1583272256936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="271" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583272256936" />
+    <state width="1237" height="271" key="GridCell.Tab.0.center" timestamp="1583272256936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="271" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583272256936" />
+    <state width="1237" height="271" key="GridCell.Tab.0.left" timestamp="1583272256936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="271" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583272256936" />
+    <state width="1237" height="271" key="GridCell.Tab.0.right" timestamp="1583272256936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="271" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583272256936" />
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1583357623363">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583357623363" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$USER_HOME$/AppData/Local/Temp/Temp1_NotepadFX (3).zip/NotepadFX/src/main/java/org/groupId/controllers/Start.java</url>
+          <line>735</line>
+          <properties class="org.groupId.controllers.Start">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

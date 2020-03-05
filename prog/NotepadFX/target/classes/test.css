@@ -1,0 +1,77 @@
+.root{
+    -fx-background-color:#E0E0E8;
+
+}
+
+
+.button{
+    -fx-background-color: black;
+    -fx-text-fill:white;
+}
+
+#fOverskrift{
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+
+}
+
+.tab:selected{
+    -fx-background-color: #FAFCFB;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 5 0 0 0;
+    -fx-border-color:#3633FF;
+
+
+}
+.tab:focused{
+    -fx-focus-color: transparent;
+}
+
+.tab-pane *.tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #008080;
+}
+
+.choice-box .menu-item .label {
+    -fx-text-fill: black;
+}
+
+.label {
+    -fx-text-fill: black;
+}
+
+
+.tab-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:40px;
+  -fx-tab-max-height:40px;
+  -fx-padding: 0 -1 -1 -1;
+
+}
+
+.radio-button{
+    -fx-text-fill: black;
+
+}
+
+.check-box{
+    -fx-text-fill: black;
+}
+
+.tab{
+    -fx-pref-width: 205;
+
+}
+
+.button:hover{
+    -fx-background-color: #42eef4;
+    -fx-text-fill:black;
+}
+
+
+

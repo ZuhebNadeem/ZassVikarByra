@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.groupId.controllers.Start">
+  <tabs>
+    <Tab closable="false" text="Forside">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="538.0" layoutY="69.0" prefHeight="57.0" prefWidth="249.0" text="ZassVikarByra">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="bilde" fitHeight="390.0" fitWidth="701.0" layoutX="271.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../jobb.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+     <Tab text="Arbeidsgiver">
+        <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                 <Label layoutX="297.0" layoutY="37.0" text="Arbeidsgiver">
+                    <font>
+                       <Font size="28.0" />
+                    </font>
+                 </Label>
+                 <Label layoutX="344.0" layoutY="149.0" text="Sektor:" />
+                 <RadioButton fx:id="sOffentlig" layoutX="443.0" layoutY="149.0" mnemonicParsing="false" text="Offentlig">
+                    <toggleGroup>
+                       <ToggleGroup fx:id="Asektor" />
+                    </toggleGroup></RadioButton>
+                 <RadioButton fx:id="sPrivat" layoutX="646.0" layoutY="149.0" mnemonicParsing="false" text="Privat" toggleGroup="$Asektor" />
+                 <TextField fx:id="bAdresse" layoutX="506.0" layoutY="188.0" promptText="Adresse" />
+                 <TextField fx:id="bPostnr" layoutX="428.0" layoutY="231.0" prefHeight="27.0" prefWidth="59.0" promptText="Postnr" />
+                 <TextField fx:id="bPoststed" layoutX="576.0" layoutY="232.0" promptText="Poststed" />
+                 <TextField fx:id="kTlfnr" layoutX="523.0" layoutY="452.0" promptText="Telefonnummer" />
+                 <Label layoutX="42.0" layoutY="432.0" />
+                 <TextField fx:id="kStilling" layoutX="523.0" layoutY="391.0" promptText="Stilling" />
+                 <Button fx:id="bRegistrer" layoutX="362.0" layoutY="584.0" mnemonicParsing="false" onAction="#Reg" prefHeight="32.0" prefWidth="191.0" text="Registrer" />
+                 <TextField fx:id="kFornavn" layoutX="523.0" layoutY="343.0" promptText="Navn" />
+                 <Label layoutX="331.0" layoutY="363.0" prefHeight="81.0" prefWidth="145.0" text="Kontaktinformasjon" />
+                 <TextField fx:id="bNavn" layoutX="484.0" layoutY="103.0" promptText="Bedriftsnavn" />
+                 <Label fx:id="registrertArbeidsgiver" layoutX="704.0" layoutY="323.0" prefHeight="129.0" prefWidth="204.0" />
+                 <Button fx:id="EndreArbeidsgivere" layoutX="582.0" layoutY="584.0" mnemonicParsing="false" onAction="#EndreArbeidsgivere" prefHeight="33.0" prefWidth="159.0" text="Endre Arbeidsgivere" />
+                 <ComboBox fx:id="Bransje" layoutX="511.0" layoutY="287.0" prefWidth="150.0" promptText="Bransje" />
+                 <ListView fx:id="lagtarbeidsgivere" layoutX="847.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+                 <Button fx:id="RedigerArbgiver" layoutX="847.0" layoutY="300.0" mnemonicParsing="false" onAction="#RedigerArbgiver" text="Rediger" visible="false" />
+                 <Button fx:id="SlettArbeidsgiver" layoutX="980.0" layoutY="300.0" mnemonicParsing="false" onAction="#SlettArbeidsgiver" prefHeight="25.0" prefWidth="65.0" text="Slett" visible="false" />
+                 <Button fx:id="SkjulArbeidsgivere" layoutX="581.0" layoutY="581.0" mnemonicParsing="false" onAction="#SkjulArbeidsgivere" prefHeight="41.0" prefWidth="161.0" text="Skjul Arbeidsgivere" visible="false" />
+              </children>
+           </AnchorPane>
+        </content>
+     </Tab>
+     <Tab text="Legg ut stilling">
+        <content>
+           <AnchorPane cacheShape="false" centerShape="false" prefHeight="200.0" prefWidth="200.0">
+              <children>
+                 <Label layoutX="361.0" layoutY="26.0" text="Legg ut en stilling">
+                    <font>
+                       <Font size="28.0" />
+                    </font>
+                 </Label>
+                 <Button fx:id="registrerJobb" layoutX="595.0" layoutY="574.0" mnemonicParsing="false" onAction="#registrerJobb" prefHeight="35.0" prefWidth="97.0" text="Registrer" />
+                 <Label fx:id="registrert" layoutX="948.0" layoutY="458.0" prefHeight="40.0" prefWidth="207.0" />
+                 <Button fx:id="EndreStillinger" layoutX="700.0" layoutY="574.0" mnemonicParsing="false" onAction="#EndreStillinger" prefHeight="35.0" prefWidth="107.0" text="Endre Stillinger" />
+                 <ListView fx:id="lagtannonser" layoutX="937.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+                 <Button fx:id="RedigerStillinger" layoutX="937.0" layoutY="299.0" mnemonicParsing="false" onAction="#RedigerStillinger" prefHeight="25.0" prefWidth="82.0" text="Rediger" visible="false" />
+                 <Button fx:id="SlettStillinger" layoutX="1052.0" layoutY="299.0" mnemonicParsing="false" onAction="#SlettStillinger" prefHeight="25.0" prefWidth="89.0" text="Slett" visible="false" />
+                 <Button fx:id="SkjulStillinger" layoutX="698.0" layoutY="577.0" mnemonicParsing="false" onAction="#SkjulStillinger" prefHeight="29.0" prefWidth="112.0" text="Skjul stillinger" visible="false" />
+                 <TextField fx:id="annonseTittel" layoutX="341.0" layoutY="136.0" promptText="Annonse tittel" />
+                  <ComboBox fx:id="arbeidsgiver" layoutX="349.0" layoutY="204.0" prefWidth="150.0" promptText="Arbeidsgiver" />
+                 <TextField fx:id="arbeidssted" layoutX="358.0" layoutY="286.0" promptText="Arbeidssted" />
+                 <DatePicker fx:id="startDato" editable="false" layoutX="311.0" layoutY="363.0" prefHeight="25.0" prefWidth="100.0" promptText="Startdato" showWeekNumbers="true" style="-fx-color: green;" />
+                 <DatePicker fx:id="sluttDato" editable="false" layoutX="466.0" layoutY="363.0" prefHeight="25.0" prefWidth="100.0" promptText="Sluttdato" showWeekNumbers="true" style="-fx-color: green;" />
+                  <ComboBox fx:id="jobbkategori" layoutX="385.0" layoutY="445.0" prefWidth="150.0" promptText="Jobbkategori" />
+                 <RadioButton fx:id="deltid" layoutX="430.0" layoutY="547.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="120.0" text="Deltid">
+                     <toggleGroup>
+                       <ToggleGroup fx:id="type" />
+                     </toggleGroup>
+                  </RadioButton>
+                 <RadioButton fx:id="engasjement" layoutX="298.0" layoutY="547.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="120.0" text="Engasjement" toggleGroup="$type" />
+                  <TextArea fx:id="beskrivelse" layoutX="700.0" layoutY="458.0" prefHeight="102.0" prefWidth="228.0" promptText="Beskrivelse" wrapText="true" />
+                  <TextArea fx:id="kvalifikasjonen" layoutX="701.0" layoutY="344.0" prefHeight="87.0" prefWidth="225.0" promptText="Kvalifikasjoner" wrapText="true" />
+                 <TextField fx:id="jobbtidfra" layoutX="627.0" layoutY="286.0" promptText="Jobb fra(HH:mm)" />
+                 <TextField fx:id="jobbtidtil" layoutX="771.0" layoutY="286.0" promptText="Jobb til(HH:mm)" />
+                 <TextField fx:id="lønnsbetingelser" layoutX="674.0" layoutY="136.0" prefHeight="25.0" prefWidth="171.0" promptText="Lønnsbetingelser" />
+                 <TextField fx:id="arbeidsvilkår" layoutX="671.0" layoutY="204.0" prefHeight="25.0" prefWidth="177.0" promptText="Arbeidsvilkår" />
+                 <Label layoutX="361.0" layoutY="502.0" prefHeight="25.0" prefWidth="125.0" text="Stillingstype">
+                    <font>
+                       <Font name="Georgia" size="13.0" />
+                    </font>
+                 </Label>
+                  <Button layoutX="999.0" layoutY="574.0" mnemonicParsing="false" onAction="#LagreTilFil" prefHeight="36.0" prefWidth="106.0" text="Lagre " />
+                  <Button layoutX="865.0" layoutY="574.0" mnemonicParsing="false" onAction="#LeseFraFilen" prefHeight="35.0" prefWidth="121.0" text="Åpne Fil" />
+              </children>
+           </AnchorPane>
+        </content>
+     </Tab>
+     <Tab text="Ledige stillinger">
+        <content>
+           <AnchorPane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                 <Label alignment="CENTER" layoutX="286.0" layoutY="14.0" prefHeight="18.0" prefWidth="227.0" text="Velg din arbeidsgiver" />
+                 <Label layoutX="477.0" layoutY="211.0" text="Velg Stillinger" />
+                 <Label fx:id="valgtJobb" layoutX="205.0" layoutY="77.0" prefHeight="39.0" prefWidth="483.0" />
+                 <ComboBox fx:id="arbeidsgivere" layoutX="304.0" layoutY="52.0" onAction="#arbeidsgivere" prefHeight="25.0" prefWidth="251.0" promptText="Arbeidsgivere" />
+                 <TableView fx:id="TabellLedigestillinger" layoutX="14.0" layoutY="270.0" onMouseClicked="#Viskomplettledigestillinger" prefHeight="265.0" prefWidth="1101.0">
+                    <columns>
+                       <TableColumn fx:id="KolonneArbgiver" prefWidth="76.66665649414062" text="Arbeidsgiver" />
+                       <TableColumn fx:id="KolonneSektor" prefWidth="52.000038146972656" text="Sektor" />
+                       <TableColumn fx:id="KolonneBransje" prefWidth="60.66668701171875" text="Bransje" />
+                       <TableColumn fx:id="KolonneArbsted" prefWidth="74.0" text="Arbeidssted" />
+                       <TableColumn fx:id="KolonneStdato" prefWidth="65.99998474121094" text="Start Dato" />
+                       <TableColumn fx:id="KolonneSldato" prefWidth="61.3333740234375" text="Slutt Dato" />
+                       <TableColumn fx:id="KolonneStillingtype" prefWidth="78.0" text="Stillingstype" />
+                       <TableColumn fx:id="KolonneLonnbet" prefWidth="100.66671752929688" text="Lønnsbetingelser" />
+                       <TableColumn fx:id="KolonneArbvilkar" prefWidth="82.6666259765625" text="Arbeidsvilkår" />
+                       <TableColumn fx:id="KolonneKnavn" prefWidth="82.6666259765625" text="Kontakt navn" />
+                       <TableColumn fx:id="KolonneKstilling" prefWidth="90.66668701171875" text="Kontakt Stilling" />
+                       <TableColumn fx:id="KolonneKtelnr" prefWidth="82.66668701171875" text="Kontakt telnr" />
+                       <TableColumn fx:id="KolonneAnonnsetittel" prefWidth="67.333251953125" text="Tittel" />
+                       <TableColumn fx:id="KolonneJobbTidStart" prefWidth="61.33331298828125" text="Start tid" />
+                       <TableColumn fx:id="KolonneJobbTidSlutt" prefWidth="56.0" text="Slutt tid" />
+                    </columns>
+                 </TableView>
+                 <Label fx:id="feltStilllingsbeskrivelse" layoutX="625.0" layoutY="67.0" prefHeight="142.0" prefWidth="279.0" visible="false" />
+                 <Label fx:id="feltKvalifikasjoner" layoutX="951.0" layoutY="62.0" prefHeight="157.0" prefWidth="262.0" visible="false" />
+                 <ListView fx:id="kontraksokere" layoutX="38.0" layoutY="38.0" prefHeight="200.0" prefWidth="200.0" />
+                 <Button fx:id="sokeransatt" layoutX="523.0" layoutY="574.0" mnemonicParsing="false" onAction="#sokeransatt" prefHeight="38.0" prefWidth="148.0" text="Ansett Søker" />
+                 <Label fx:id="tekstvelgsoker" layoutX="90.0" layoutY="14.0" text="Velg Jobbsoker " />
+                 <TextField fx:id="sokbar" layoutX="657.0" layoutY="54.0" onKeyReleased="#sokbar" prefHeight="25.0" prefWidth="195.0" promptText="Søk på Arbeidsgiver,Tittel" />
+              </children>
+           </AnchorPane>
+        </content>
+     </Tab>
+     <Tab text="Jobbsøker">
+        <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                 <AnchorPane layoutX="-3.0" layoutY="-18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1250.0">
+                    <children>
+                       <TextField id="Fornavn" fx:id="Fornavn" layoutX="379.0" layoutY="82.0" promptText="Navn" />
+                       <TextField id="Telefonnummer" fx:id="Telefonnummer" layoutX="379.0" layoutY="234.0" promptText="Telefonnumer" />
+                       <TextField id="Adresse" fx:id="Adresse" layoutX="379.0" layoutY="128.0" promptText="Adresse" />
+                       <TextField id="Postnr" fx:id="Postnr" layoutX="670.0" layoutY="188.0" prefHeight="27.0" prefWidth="78.0" promptText="Postnr" />
+                       <TextField id="Poststed" fx:id="Poststed" layoutX="379.0" layoutY="189.0" promptText="Poststed" />
+                       <TextField fx:id="ReferanseNavn" layoutX="133.0" layoutY="359.0" promptText="Navn" visible="false" />
+                       <TextField fx:id="ReferanseTelefonnummer" layoutX="291.0" layoutY="359.0" promptText="Telefonnummer" visible="false" />
+                       <Label layoutX="258.0" layoutY="326.0" prefHeight="18.0" prefWidth="83.0" text="Referanser" />
+                       <Button fx:id="referanseleggtil" layoutX="453.0" layoutY="359.0" mnemonicParsing="false" onAction="#referanseleggtil" text="Legg til" visible="false" />
+                       <Label layoutX="567.0" layoutY="22.0" text="Jobbsøker">
+                          <font>
+                             <Font size="28.0" />
+                          </font>
+                       </Label>
+                       <Button fx:id="Sok" layoutX="542.0" layoutY="606.0" mnemonicParsing="false" onAction="#Sok" text="Fullfør" />
+                       <TextField fx:id="Lønnskrav" layoutX="670.0" layoutY="234.0" promptText="Lønnskrav" />
+                       <TableView fx:id="referansetabell" layoutX="188.0" layoutY="406.0" prefHeight="161.0" prefWidth="200.0" visible="false">
+                          <columns>
+                             <TableColumn fx:id="kolonnenavn" prefWidth="97.3333511352539" text="Navn" />
+                             <TableColumn fx:id="kolonnetelefonnummer" prefWidth="101.33329772949219" text="Telefonnummer" />
+                          </columns>
+                       </TableView>
+                       <Button fx:id="SlettReferanse" layoutX="520.0" layoutY="359.0" mnemonicParsing="false" onAction="#SlettReferanse" text="Slett" visible="false" />
+                       <DatePicker id="Fødselsdato" fx:id="Fødselsdato" editable="false" layoutX="670.0" layoutY="81.0" prefHeight="27.0" prefWidth="165.0" promptText="Fødselsdato" showWeekNumbers="true" />
+                       <TextField id="Epost" fx:id="Epost" layoutX="670.0" layoutY="128.0" promptText="E-post" />
+                       <TextField fx:id="Stilling" layoutX="730.0" layoutY="360.0" prefHeight="25.0" prefWidth="102.0" promptText="Stilling" visible="false" />
+                       <DatePicker fx:id="JobberfaringFDato" editable="false" layoutX="846.0" layoutY="360.0" prefHeight="25.0" prefWidth="97.0" promptText="FraDato" visible="false" />
+                       <DatePicker fx:id="JobberfaringTdato" editable="false" layoutX="954.0" layoutY="360.0" prefHeight="25.0" prefWidth="97.0" promptText="TilDato" visible="false" />
+                       <Button fx:id="LeggTilJobberfaring" layoutX="1061.0" layoutY="360.0" mnemonicParsing="false" onAction="#LeggTilJobberfaring" text="Legg til" visible="false" />
+                       <Button fx:id="SlettJobberfaring" layoutX="1134.0" layoutY="360.0" mnemonicParsing="false" onAction="#SlettJobberfaring" text="Slett" visible="false" />
+                       <TableView fx:id="JobbErfaringTabell" layoutX="731.0" layoutY="397.0" prefHeight="169.0" prefWidth="327.0" visible="false">
+                          <columns>
+                             <TableColumn fx:id="FirmaNavn" prefWidth="78.6666259765625" text="Firma" />
+                             <TableColumn fx:id="StillingNavn" prefWidth="94.0" text="Stilling" />
+                             <TableColumn fx:id="DatoFra" minWidth="9.3333740234375" prefWidth="81.33331298828125" text="Dato fra" />
+                             <TableColumn fx:id="DatoTil" prefWidth="69.333251953125" text="Dato til" />
+                          </columns>
+                       </TableView>
+                       <TextField fx:id="utdanningsnavn" layoutX="670.0" layoutY="274.0" promptText="Utdanningsnavn" />
+                       <Button fx:id="VisReferanser" layoutX="325.0" layoutY="322.0" mnemonicParsing="false" onAction="#VisReferanser" prefHeight="25.0" prefWidth="31.0" text="+" />
+                       <Label layoutX="663.0" layoutY="317.0" prefHeight="36.0" prefWidth="67.0" text="Jobberfaring" />
+                       <Button fx:id="Visjobberfaring" layoutX="732.0" layoutY="322.0" mnemonicParsing="false" onAction="#Visjobberfaring" text="+" />
+                       <Button fx:id="VisEndrejobbsoker" layoutX="611.0" layoutY="606.0" mnemonicParsing="false" onAction="#VisEndrejobbsoker" text="Vis/Endre søkere" />
+                       <ComboBox fx:id="Utdannelse" layoutX="378.0" layoutY="274.0" prefWidth="150.0" promptText="Utdannelse" />
+                       <Button fx:id="OppdaterJobbsoker" layoutX="981.0" layoutY="309.0" mnemonicParsing="false" onAction="#OppdaterJobbsoker" text="Rediger" visible="false" />
+                       <Button fx:id="SlettJobbsøker" layoutX="1081.0" layoutY="309.0" mnemonicParsing="false" onAction="#SlettJobbsøker" text="Slett Jobbsøker" visible="false" />
+                       <Button fx:id="SkjulReferanser" layoutX="325.0" layoutY="322.0" mnemonicParsing="false" onAction="#SkjulReferanser" prefHeight="25.0" prefWidth="30.0" text="-" visible="false" />
+                       <Button fx:id="SkjulJobberfaring" layoutX="733.0" layoutY="322.0" mnemonicParsing="false" onAction="#SkjulJobberfaring" text="-" visible="false" />
+                       <ListView fx:id="soktsokere" layoutX="981.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+                       <TextField fx:id="Firma" layoutX="624.0" layoutY="360.0" prefHeight="25.0" prefWidth="91.0" promptText="Firma" visible="false" />
+                       <Button fx:id="skjulsokere" layoutX="610.0" layoutY="606.0" mnemonicParsing="false" onAction="#skjulsokere" prefHeight="25.0" prefWidth="105.0" text="Skjul Søkere" visible="false" />
+                        <Label fx:id="lblJobbsoker" layoutX="753.0" layoutY="586.0" prefHeight="65.0" prefWidth="220.0" />
+                        <Label fx:id="lblReferanse" layoutX="14.0" layoutY="406.0" prefHeight="35.0" prefWidth="198.0" />
+                        <Label fx:id="lblJobberfaring" layoutX="1068.0" layoutY="487.0" prefHeight="35.0" prefWidth="176.0" />
+                    </children>
+                 </AnchorPane>
+              </children>
+           </AnchorPane>
+        </content>
+     </Tab>
+     <Tab text="Arbeidsforhold">
+        <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                 <Label layoutX="42.0" layoutY="432.0" />
+                 <Label layoutX="279.0" layoutY="204.0" prefHeight="321.0" prefWidth="404.0" />
+                 <TableView fx:id="TabellArbeidsforhold" layoutX="356.0" layoutY="165.0" prefHeight="353.0" prefWidth="717.0">
+                    <columns>
+                       <TableColumn fx:id="KolonneAjobbsoker" prefWidth="162.3999786376953" text="Jobbsoker" />
+                       <TableColumn fx:id="KolonneAArbgiver" minWidth="0.0" prefWidth="129.60003662109375" text="Arbeidsgiver" />
+                       <TableColumn fx:id="KolonneAtittel" minWidth="4.7999267578125" prefWidth="141.5999755859375" text="Tittel" />
+                       <TableColumn fx:id="KolonneAstdato" minWidth="0.0" prefWidth="95.20001220703125" text="Start Dato" />
+                       <TableColumn fx:id="KolonneAsldato" minWidth="0.0" prefWidth="124.79998779296875" text="Slutt Dato" />
+                    </columns>
+                 </TableView>
+                 <TextField fx:id="SokAforhold" layoutX="534.0" layoutY="93.0" onKeyReleased="#SokAforhold" promptText="Sok" />
+              </children>
+           </AnchorPane>
+        </content>
+     </Tab>
+  </tabs>
+</TabPane>
